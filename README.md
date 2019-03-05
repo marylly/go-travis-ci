@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/marylly/go-travis-ci.svg?branch=master)](https://travis-ci.org/marylly/go-travis-ci)
