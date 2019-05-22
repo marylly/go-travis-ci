@@ -15,6 +15,10 @@ func Routes() *gin.Engine {
 		c.String(200,"Service OK! =]")
 	})
 
+	application.POST("/resource/add", func(c *gin.Context) {
+		c.String(200,"New POST method request OK! =]")
+	})
+
 	return application
 }
 
