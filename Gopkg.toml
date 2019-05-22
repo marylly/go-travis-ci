@@ -40,3 +40,8 @@
 [[constraint]]
   name = "github.com/appleboy/gofight"
   version = "2.0.0"
+
+[metadata.heroku]
+  root-package = "github.com/marylly/go-travis-ci"
+  go-version = "1.12"
+  install = [ "./..." ]
