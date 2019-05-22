@@ -1,10 +1,12 @@
 package main
 
 import "github.com/gin-gonic/gin"
+import "os"
 
 func main() {
+	port := getPort()
 	server := Routes()
-	server.Run(":8080")
+	server.Run(port)
 }
 
 func Routes() *gin.Engine {
@@ -16,3 +18,10 @@ func Routes() *gin.Engine {
 	return application
 }
 
+func getPort() string {
+	p := os.Getenv("PORT")
+	if p != "" {
+		return ":" + p
+	}
+	return ":3000"
+}
